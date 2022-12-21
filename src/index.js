@@ -17,9 +17,9 @@ aTagSelector.forEach(a => (
 
 document.addEventListener('keydown', function(evt) {
     if(evt.key === 'a') {
-        logoSelector.textContent = "Fun Bus!!!"
+        h2Selector.textContent = "Fun Bus!!!"
     } else if (evt.key === 's') {
-        logoSelector.textContent = "Fun Bus???"
+        h2Selector.textContent = "Fun Bus???"
     }
 });
 
@@ -41,11 +41,11 @@ document.addEventListener("keydown", function(evt) {
     }
 });
 
-imgSelector.addEventListener("mousedown", function(evt) {
+document.addEventListener("mousedown", function(evt) {
     if(evt.type === "mousedown") {
         h2Selector.textContent = "FUN BUS!!"
     }});
-imgSelector.addEventListener('mouseup', function(evt) {
+document.addEventListener('mouseup', function(evt) {
     if (evt.type === "mouseup") {
         h2Selector.textContent = "Welcome To Fun Bus!"
     }
@@ -57,6 +57,6 @@ pSelector.forEach(p => (
     })
 ))
 
-homeSelect[0].addEventListener("click", evt => {
+document.addEventListener("click", evt => {
     console.log('preventDefault!!')
         evt.preventDefault()})
